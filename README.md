@@ -1,6 +1,7 @@
 1. Purpose: These are a SQL query that produces a search result. The query produces results in approximately 8 seconds. 
 2. Task: Please suggest what improvements should be done to the query in order to improve its performance. 
 
+```
 SELECT
 Jobs.id AS `Jobs__id`, 
 Jobs.name AS `Jobs__name`, 
@@ -90,7 +91,7 @@ AND (Jobs.deleted) IS NULL)
 GROUP BY Jobs.id 
 ORDER BY Jobs.sort_order desc, Jobs.id DESC 
 LIMIT 50 OFFSET 0
-
+```
 
 
 3. Suggestion and idea
